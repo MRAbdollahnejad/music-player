@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="output.css">
+    <title>music player</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <img src="images/chevron%20down.svg">
+        <span>Now Playing</span>
+        <img src="images/Settings.svg">
+    </header>
+    <main class="main">
+        <img src="images/Song%20Cover%20Art%201.png" class="pic">
+        <h2>Remedy</h2>
+        <p>Annie Schindel</p>
+        <input id="range-input" type="range" class="range" min="0" max="1000" step="1" value="0" >
+        <audio id="music" src="audio/Adat.mp3"  ></audio>
+
+        <div class="time">
+            <span id="left-time">0:00</span>
+            <span id="duration"></span>
+        </div>
+        <div class="nowPlaying">
+            <img src="images/Group%201.png">
+            <img src="images/Group%201%20(1).png">
+        </div>
+
+        <div class="nextPlaying">
+            <div class="sc">
+                <span>UP NEXT</span>
+                <img src="images/bullet%20list.svg">
+            </div>
+            <div class="sc">
+                <span>I'm Fine</span>
+                <span>Ashe</span>
+                <span>2:16</span>
+            </div>
+            <div class="sc">
+                <span>Drown</span>
+                <span>Dabin</span>
+                <span>4:19</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <img src="images/Shuffle.svg">
+            <img src="images/Group%202.png">
+            <img src="images/Group%203.svg" id="play">
+            <img src="images/Group%204.svg">
+            <img src="images/Repeat.svg">
+        </div>
+    </main>
+    <footer></footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

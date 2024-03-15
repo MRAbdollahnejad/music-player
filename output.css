@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #F0F0F0;
+}
+
+.container {
+  font-family: Roboto, sans-serif;
+  background-color: #000000;
+  padding: 33px 29px;
+  max-width: 450px;
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.container .main .pic {
+  width: 100%;
+  margin-top: 18px;
+}
+.container .main .range {
+  margin-top: 17px;
+  width: 100%;
+  accent-color: #52D7BF;
+}
+.container .main .range::-webkit-slider-thumb {
+  background-color: #52D7BF;
+}
+.container .main .time {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main .nowPlaying {
+  margin: 14px 0 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main .nextPlaying {
+  width: 95%;
+  margin: auto;
+  background-color: rgba(150, 150, 150, 0.12);
+  border-radius: 30px;
+  padding: 15px 21px;
+  font-weight: 300;
+}
+.container .main .nextPlaying .sc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.container .main .buttons {
+  margin-top: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=output.css.map */

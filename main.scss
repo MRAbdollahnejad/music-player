@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #F0F0F0;
+}
+@mixin flex-sc($justify:true,$align:true) {
+  display: flex;
+  @if($justify==true){
+    justify-content: space-between;
+  }
+  @if($align==true){
+    align-items: center;
+  }
+}
+.container{
+  font-family: Roboto,sans-serif;
+  background-color: #000000;
+  padding: 33px 29px;
+  max-width: 450px;
+  .header{
+    @include flex-sc();
+    font-weight: bold;
+  }
+  .main{
+    .pic{
+      width:100%;
+      margin-top: 18px;
+    }
+    .range{
+      margin-top: 17px;
+      width: 100%;
+      accent-color:#52D7BF ;
+      &::-webkit-slider-thumb{
+        background-color:#52D7BF ;
+      }
+    }
+    .time{
+      margin-top: 4px;
+      @include flex-sc()
+    }
+    .nowPlaying{
+      margin: 14px 0 22px 0;
+      @include flex-sc()
+    }
+    .nextPlaying{
+      width: 95%;
+      margin: auto;
+      background-color: rgba(150, 150, 150, 0.12);
+      border-radius: 30px;
+      padding: 15px 21px ;
+      font-weight: 300;
+      .sc{
+      @include flex-sc();
+      margin-bottom: 8px;
+    }
+    }
+    .buttons{
+      margin-top: 52px;
+      width: 100%;
+      @include flex-sc();
+      justify-content: space-evenly;
+    }
+
+  }
+}
